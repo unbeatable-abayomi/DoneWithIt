@@ -6,6 +6,7 @@ import { Dimensions,StyleSheet,Platform, StatusBar,Alert,
   import {useDimensions,useDeviceOrientation} from "@react-native-community/hooks";
 import WelcomeScreen from './app/assets/screens/WelcomeScreen';
 import ViewImageScreen from './app/assets/screens/ViewImageScreen';
+import AppButton from './app/components/AppButton';
 
 // export default function App() {
 //   console.log(Dimensions.get("screen"));
@@ -73,7 +74,16 @@ import ViewImageScreen from './app/assets/screens/ViewImageScreen';
 export default function App(){  
 return (
   
-  <ViewImageScreen/>
+
+  <View
+    style={{
+flex : 1,
+justifyContent : "center",
+  alignItems: "center",
+    }}>
+     {/* <ViewImageScreen/> */}
+   <AppButton title="Login" onPress={()=>console.log('tapped')}/>
+  </View>
 //   <View style={{backgroundColor : "#fff",
 //   flex: 1,
 //   flexDirection : "row",
