@@ -4,6 +4,8 @@ import { Dimensions,StyleSheet,Platform, StatusBar,Alert,
   TouchableOpacity,Text, View ,SafeAreaView,Image, 
   Button} from 'react-native';
   import {useDimensions,useDeviceOrientation} from "@react-native-community/hooks";
+import WelcomeScreen from './app/assets/screens/WelcomeScreen';
+import ViewImageScreen from './app/assets/screens/ViewImageScreen';
 
 // export default function App() {
 //   console.log(Dimensions.get("screen"));
@@ -70,51 +72,53 @@ import { Dimensions,StyleSheet,Platform, StatusBar,Alert,
 
 export default function App(){  
 return (
-  <View style={{backgroundColor : "#fff",
-  flex: 1,
-  flexDirection : "row",
-  justifyContent : "center",
-  alignItems: "center",
-  //flexWrap : "wrap"
-}
-  }>
+  
+  <ViewImageScreen/>
+//   <View style={{backgroundColor : "#fff",
+//   flex: 1,
+//   flexDirection : "row",
+//   justifyContent : "center",
+//   alignItems: "center",
+//   //flexWrap : "wrap"
+// }
+//   }>
 
-<View style={{backgroundColor : "green",
-width:100,
-height:100,
-//alignSelf: 'flex-start'
-  // flex: 2
-  }}>
+// <View style={{backgroundColor : "green",
+// width:100,
+// height:100,
+// //alignSelf: 'flex-start'
+//   // flex: 2
+//   }}>
 
-  </View>
-<View style={{backgroundColor : "orange",
-width:100,
-height:100,
-//top: 20
-  // flex: 1
-  }}>
+//   </View>
+// <View style={{backgroundColor : "orange",
+// width:100,
+// height:100,
+// //top: 20
+//   // flex: 1
+//   }}>
 
-  </View>
-<View style={{backgroundColor : "grey",
-width:100,
-height:100,
-  // flex: 1
-  }}>
-     </View>
-{/* <View style={{backgroundColor : "purple",
-width:100,
-height:100,
-  // flex: 1
-  }}>
+//   </View>
+// <View style={{backgroundColor : "grey",
+// width:100,
+// height:100,
+//   // flex: 1
+//   }}>
+//      </View>
+// {/* <View style={{backgroundColor : "purple",
+// width:100,
+// height:100,
+//   // flex: 1
+//   }}>
 
-  </View>
-  <View style={{backgroundColor : "greenyellow",
-width:100,
-height:100,
-  // flex: 1
-  }}>
+//   </View>
+//   <View style={{backgroundColor : "greenyellow",
+// width:100,
+// height:100,
+//   // flex: 1
+//   }}>
 
-  </View> */}
-  </View>
+//   </View> */}
+//   </View>
 )
 }
