@@ -1,18 +1,19 @@
 import React from 'react';
 import {  Text,StyleSheet,Platform} from 'react-native';
 // import {   } from "@expo/vector-icons";
-function AppText({children}) {
+function AppText({children,style}) {
     return (
-        <div>
-            <Text styles={ styles.text }>{chlidren}</Text>
-        </div>
+    
+            <Text style={[styles.text,style]}>{children}</Text>
+        
     );
 }
 
 const styles = StyleSheet.create({
     text: {
         fontSize : 18,
-        fontFamily : Plaform.OS === "android" ? "Roboto": "Avenir"
+        //fontFamily : Plaform.OS === "android" ? "Roboto": "Avenir"
+         fontFamily : "Roboto",
     }
 })
 

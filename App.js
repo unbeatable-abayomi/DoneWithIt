@@ -7,6 +7,7 @@ import { Dimensions,StyleSheet,Platform, StatusBar,Alert,
 import WelcomeScreen from './app/assets/screens/WelcomeScreen';
 import ViewImageScreen from './app/assets/screens/ViewImageScreen';
 import AppButton from './app/components/AppButton';
+import Card from './app/components/Card'
 
 // export default function App() {
 //   console.log(Dimensions.get("screen"));
@@ -73,8 +74,15 @@ import AppButton from './app/components/AppButton';
 
 export default function App(){  
 return (
-  
-  <WelcomeScreen/>
+  <View style={{
+    backgroundColor : "#f8f4f4",
+    padding : 20,
+    paddingTop : 100,
+  }}>
+<Card title="Red Jacket For Sale" subTitle = "$100" 
+image={require("/Users/abayomiigwubor/Projects/expoProjects/DoneWithIt/app/assets/jacket.jpg")} />
+  </View>
+  // <WelcomeScreen/>
 
 //   <View
 //     style={{
