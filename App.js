@@ -10,7 +10,9 @@ import MessagesScreen from './app/assets/screens/MessagesScreen';
 import ListingDetailsScreen from './app/assets/screens/ListingDetailsScreen';
 import AppButton from './app/components/AppButton';
 import Card from './app/components/Card'
-
+import Screen from './app/components/Screen'
+import Icon from './app/components/Icon'
+import ListItem from './app/components/ListItem'
 // export default function App() {
 //   console.log(Dimensions.get("screen"));
 //   console.log(useDimensions(),useDeviceOrientation());
@@ -81,14 +83,20 @@ return (
 //     backgroundColor : "#f8f4f4",
 //     padding : 20,
 //     paddingTop : 100,
-//   }}>
+//   }}>/
 // <Card title="Red Jacket For Sale" subTitle = "$100" 
 // image={require("./app/assets/jacket.jpg")} />
 //   </View>
 //<ListingDetailsScreen/>
 //<ViewImageScreen/>
   //<WelcomeScreen/>
-<MessagesScreen/>
+//<MessagesScreen/>
+<Screen>
+{/* <Icon name="email" size = {100}/>  */}
+<ListItem title="My title" subTitle="My subtitle"  ImageComponent={
+<Icon name = "email" 
+/>}/>
+</Screen>
 //   <View
 //     style={{
 // flex : 1,
