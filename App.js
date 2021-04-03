@@ -6,6 +6,8 @@ import { Dimensions,StyleSheet,Platform, StatusBar,Alert,
   import {useDimensions,useDeviceOrientation} from "@react-native-community/hooks";
 import WelcomeScreen from './app/assets/screens/WelcomeScreen';
 import ViewImageScreen from './app/assets/screens/ViewImageScreen';
+import MessagesScreen from './app/assets/screens/MessagesScreen';
+import ListingDetailsScreen from './app/assets/screens/ListingDetailsScreen';
 import AppButton from './app/components/AppButton';
 import Card from './app/components/Card'
 
@@ -60,6 +62,7 @@ import Card from './app/components/Card'
   
 // }
 ;
+//import ListingDetailsScreen from './app/assets/screens/ListingDetailsScreen';
 // const styles = StyleSheet.create({
 //   container: {
 //     flex: 1,
@@ -74,16 +77,18 @@ import Card from './app/components/Card'
 
 export default function App(){  
 return (
-  <View style={{
-    backgroundColor : "#f8f4f4",
-    padding : 20,
-    paddingTop : 100,
-  }}>
-<Card title="Red Jacket For Sale" subTitle = "$100" 
-image={require("/Users/abayomiigwubor/Projects/expoProjects/DoneWithIt/app/assets/jacket.jpg")} />
-  </View>
-  // <WelcomeScreen/>
-
+//   <View style={{
+//     backgroundColor : "#f8f4f4",
+//     padding : 20,
+//     paddingTop : 100,
+//   }}>
+// <Card title="Red Jacket For Sale" subTitle = "$100" 
+// image={require("./app/assets/jacket.jpg")} />
+//   </View>
+//<ListingDetailsScreen/>
+//<ViewImageScreen/>
+  //<WelcomeScreen/>
+<MessagesScreen/>
 //   <View
 //     style={{
 // flex : 1,
